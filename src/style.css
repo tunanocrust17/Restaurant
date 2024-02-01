@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    --main-bg: #b3b4b3ef;
+    background-color: var(--main-bg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 10fr 1fr;
+    grid-template-rows: .25fr 8fr;
+    background-color: var(--main-bg);
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    --main-bg: #b3b4b3ef;
+    background-color: var(--main-bg);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    background-color: var(--main-bg);
+}
+
+button {
+    border: none;
+    font-size: 1.5rem;
+    background-color: var(--main-bg);
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#content {
+    grid-column: 2/4;
+    background-color: #ADBC9F;
+}
