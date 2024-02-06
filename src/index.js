@@ -1,19 +1,25 @@
 // import _ from 'lodash';
 import './style.css';
 import homePage from './home.js';
+import menuPage from './menu.js';
+import aboutPage from './about.js';
 
-// function component() {
-//     const element = document.createElement('div');
-//    const btn = document.createElement('button');
+const contentDiv = document.getElementById('content');
  
-//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
- 
-//    btn.innerHTML = 'Click me and check the console!';
-//    btn.onclick = printMe;
- 
-//    element.appendChild(btn);
- 
-//     return element;
-//   }
- 
-  document.getElementById('content').appendChild(homePage());
+contentDiv.appendChild(homePage());
+
+const homeBtn = document.getElementById('homeBtn');
+const menuBtn = document.getElementById('menuBtn');
+
+
+homeBtn.addEventListener('click', ()=>{
+    contentDiv.replaceChildren(homePage());
+})
+
+menuBtn.addEventListener('click', ()=>{
+    contentDiv.replaceChildren(menuPage());
+})
+
+aboutBtn.addEventListener('click', ()=>{
+    contentDiv.replaceChildren(aboutPage());
+})

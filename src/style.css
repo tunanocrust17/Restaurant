@@ -45,7 +45,7 @@ button {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: #ADBC9F;
-    border-radius: ;
+    border-radius: 25px;
     /* place-content: center; */
 
     display: flex;
@@ -68,7 +68,7 @@ footer {
     justify-content: center;
 }
 
-.welcome-page {
+.welcome-page, .menu-page, .about-page {
     color: white;
     display: flex;
     justify-content: center;
