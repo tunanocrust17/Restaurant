@@ -6,17 +6,17 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 10fr 1fr;
-    grid-template-rows: .25fr 8fr;
+    grid-template-columns: 1fr 5fr .25fr;
+    grid-template-rows: 1fr 30fr 1fr;
     background-color: var(--main-bg);
 }
 
 header {
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 1/2;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
     --main-bg: #b3b4b3ef;
@@ -25,6 +25,7 @@ header {
 
 nav {
     display: flex;
+
     gap: 25px;
     background-color: var(--main-bg);
 }
@@ -41,6 +42,38 @@ button {
 }
 
 #content {
-    grid-column: 2/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
     background-color: #ADBC9F;
+    border-radius: ;
+    /* place-content: center; */
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url(image/fish.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/* 
+    height: 100%;
+    width: 100%; */
+    
+}
+
+footer {
+    grid-row: 3/4;
+    grid-column: 1/4;
+
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-page {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px;
 }
