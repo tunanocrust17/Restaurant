@@ -39,6 +39,21 @@ button {
 .sidebar {
     grid-column: 1/2;
     grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* white-space: nowrap; */
+}
+
+.sidebar-h1 {
+    font-size: 3rem;
+    transform: rotate(-90deg);
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    /* height: 100%; */
+    
 }
 
 #content {
@@ -46,7 +61,6 @@ button {
     grid-row: 2/3;
     background-color: #ADBC9F;
     border-radius: 25px;
-    /* place-content: center; */
 
     display: flex;
     justify-content: center;
@@ -69,20 +83,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
     border-radius: 25px;
-    /* background-color: #9c9c9cef; */
     background: rgba(56, 56, 56, 0.5);
-    /* opacity: 0.6; */
-    margin: 3.5rem;
+
+    margin: 1.5rem;
+    width: 100%;
 }
 
 .welcome-page, .menu-page, .about-page {
-    color: white;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
+    color: white;
+    font-weight: bold;
+    
     margin: 50px;
 }

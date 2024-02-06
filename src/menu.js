@@ -1,4 +1,8 @@
 export default function menuPage() {
+    
+    const contentContaner = document.createElement('div');
+    contentContaner.classList.add('content-container')
+    
     const el = document.createElement('div');
     el.classList.add('menu-page');
 
@@ -6,6 +10,7 @@ export default function menuPage() {
     title.innerHTML = "Menu"
     el.appendChild(title);
 
-    return el;
-    // alert("you've been clicked")
+    contentContaner.appendChild(el);
+
+    return contentContaner;
 };

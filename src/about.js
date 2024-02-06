@@ -1,4 +1,8 @@
 export default function aboutPage() {
+
+    const contentContaner = document.createElement('div');
+    contentContaner.classList.add('content-container')
+
     const el = document.createElement('div');
     el.classList.add('about-page');
 
@@ -6,5 +10,7 @@ export default function aboutPage() {
     title.innerHTML = "Contact The Giggling Grouper"
     el.appendChild(title);
 
-    return el;
+    contentContaner.appendChild(el);
+    
+    return contentContaner;
 }
