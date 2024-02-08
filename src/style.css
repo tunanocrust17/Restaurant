@@ -1,4 +1,5 @@
 body {
+    font-style: inherit;
     margin: 0;
     --main-bg: #b3b4b3ef;
     background-color: var(--main-bg);
@@ -43,16 +44,19 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* white-space: nowrap; */
+
 }
 
 .sidebar-h1 {
-    font-size: 3rem;
-    transform: rotate(-90deg);
+    font-size: 5rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     margin: 0;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: nowrap;
-    /* height: 100%; */
+    width: 100%;
     
 }
 
