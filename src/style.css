@@ -112,3 +112,7 @@ footer {
     align-items: center;
 }
 
+.description-price {
+    display: flex;
+}
+

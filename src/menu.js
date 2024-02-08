@@ -24,6 +24,7 @@ export default function menuPage() {
     appContainer.appendChild(appOne);
 
     const appOneDescAndPrice = document.createElement('div');
+    appOneDescAndPrice.classList.add('description-price')
     const appOneDesc = document.createElement('p');
     appOneDesc.innerHTML ="Description: Bite-sized pieces of tuna marinated in a zesty blend of soy sauce, ginger, and garlic, sprinkled with sesame seeds for extra crunch. Served with a tangy lime wedge for a burst of flavor."
     const appOnePrice = document.createElement('p');
