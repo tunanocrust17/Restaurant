@@ -10,6 +10,30 @@ export default function menuPage() {
     title.innerHTML = "Menu"
     el.appendChild(title);
 
+    //menu container
+    const menuContainerDiv = document.createElement('div');
+    menuContainerDiv.classList.add('menu-container');
+
+    //appetizer container
+    const appContainer = document.createElement('div');
+    appContainer.classList.add('app-container');
+
+    //appetizer one build
+    const appOne = document.createElement('h2');
+    appOne.innerHTML = "Ticklish Tuna Tidbits"
+    appContainer.appendChild(appOne);
+
+    const appOneDescAndPrice = document.createElement('div');
+    const appOneDesc = document.createElement('p');
+    appOneDesc.innerHTML ="Description: Bite-sized pieces of tuna marinated in a zesty blend of soy sauce, ginger, and garlic, sprinkled with sesame seeds for extra crunch. Served with a tangy lime wedge for a burst of flavor."
+    const appOnePrice = document.createElement('p');
+    appOnePrice.innerHTML = "$7.77";
+    appOneDescAndPrice.appendChild(appOneDesc);
+    appOneDescAndPrice.appendChild(appOnePrice);
+    appOne.appendChild(appOneDescAndPrice)
+
+    menuContainerDiv.appendChild(appContainer);
+    el.appendChild(menuContainerDiv);
     contentContaner.appendChild(el);
 
     return contentContaner;
