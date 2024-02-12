@@ -118,5 +118,6 @@ footer {
 
 .description-price {
     display: flex;
+    justify-content: space-between;
 }
 

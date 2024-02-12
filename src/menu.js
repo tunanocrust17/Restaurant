@@ -1,3 +1,6 @@
+import appTemp from "./appetizerTemp";
+import appetizerList from "./appetizerList";
+
 export default function menuPage() {
     
     const contentContaner = document.createElement('div');
@@ -21,7 +24,7 @@ export default function menuPage() {
     //appetizer one build
     const appOne = document.createElement('h2');
     appOne.innerHTML = "Ticklish Tuna Tidbits"
-    appContainer.appendChild(appOne);
+    
 
     const appOneDescAndPrice = document.createElement('div');
     appOneDescAndPrice.classList.add('description-price')
@@ -32,6 +35,11 @@ export default function menuPage() {
     appOneDescAndPrice.appendChild(appOneDesc);
     appOneDescAndPrice.appendChild(appOnePrice);
     appOne.appendChild(appOneDescAndPrice)
+    appContainer.appendChild(appOne);
+
+    //appetizer 2 test
+    appContainer.appendChild(appTemp(appetizerList()[0].name, appetizerList()[0].description, appetizerList()[0].price));
+
 
     menuContainerDiv.appendChild(appContainer);
     el.appendChild(menuContainerDiv);
